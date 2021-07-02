@@ -32,10 +32,14 @@ layout: default
 		  <img src="https://www.istanbul-itservices.com/wp-content/uploads/2014/12/home-service-istanbulitservices.gif" class="card-img-top" alt="...">
 		  <div class="card-body">
 			<h5 class="card-title">Card title</h5>
-			<p class="card-text">Computer Repair
-				Viruses Removal
-				Backup Files
-				Internet Connection</p>
+			<div class="card-text">
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">Computer Repair</li>
+					<li class="list-group-item">Viruses Removal</li>
+					<li class="list-group-item">Backup Files</li>
+					<li class="list-group-item">Internet Connection</li>
+				 </ul>
+			</div>
 			<a href="#" class="btn btn-primary">Go somewhere</a>
 		  </div>
 		</div>
