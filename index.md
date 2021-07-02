@@ -37,7 +37,7 @@ layout: default
 					<li class="list-group-item">Computer Repair</li>
 					<li class="list-group-item">Viruses Removal</li>
 					<li class="list-group-item">Backup Files</li>
-					<li class="list-group-item">Internet Connection</li>
+					<li class="list-group-item"><i class="fas fa-check"></i>Internet Connection</li>
 				 </ul>
 			</div>
 			<a href="#" class="btn btn-primary">Go somewhere</a>
