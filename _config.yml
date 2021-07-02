@@ -1,0 +1,36 @@
+theme: jekyll-theme-modernist
+title: Bilgi işlem Online
+description: Bilgi işlem topluluğu
+url: http://bilgiislem.online
+google_analytics: UA-98174565-2
+lang: tr-TR
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  
+
+timezone:    Europe/Istanbul
+
+repository: bilgislem/bilgislem.github.io
+
+collections:
+  authors:
+    output: true
+    
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+      permalink: /yazarlar
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

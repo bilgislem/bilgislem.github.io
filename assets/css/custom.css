@@ -1,0 +1,32 @@
+nav.view
+{
+  padding-left: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: initial;
+}
+
+
+#search-demo-container {
+  max-width: 40em;
+  padding: 1em;
+  margin: 1em auto;
+  border: 1px solid lightgrey;
+}
+#search-input {
+  display: inline-block;
+  padding: .5em;
+  width: 100%;
+  font-size: 0.8em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header ul li {
+    width: 100%;
+    float: left;
+    border-right: 1px solid #3A7CBE;
+    height: 38px;
+}
+

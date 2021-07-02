@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% feed_meta %}
+    {% seo %}
+<!-- or without installing anything -->
+    <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    {%if page.tags %}
+	<meta name="keywords" content="{{ page.tags | join: ', ' | escape }}"/>
+    {%endif %}
+    {% if site.google_analytics %}
+    <script type="text/javascript" >
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push
+
+(arguments)};ga.l=+new Date;
+				ga('create', '{{ site.google_analytics }}', 'auto');
+				// Plugins
+				
+				ga('send', 'pageview');  
+			</script>
+			<script async src="https://www.google-analytics.com/analytics.js"></script>
+    {% endif %}
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      {% include navigation.html %}
+      <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        {% if site.description or site.github.project_tagline %}
+          <p>{{ site.description | default: site.github.project_tagline }}</p>
+        {% endif %}
+      </header>
+      <section>
+      {{ content }}
+
+      </section>
+    </div>
+    <footer>
+    {% if site.github.is_project_page %}
+      <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+    {% endif %}
+      <p>Başlangıç:<a href="https://github.com/ramazantufekci">ramazantufekci</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+	<script src="{{ '/assets/js/bootstrap.bundle.min.js'}}"></script>
+	<script src="{{ '/assets/js/popper.min.js'}}"></script>
+  </body>
+</html>

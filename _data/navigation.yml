@@ -1,0 +1,6 @@
+- name: Anasayfa
+  link: /
+- name: Blog
+  link: /blog.html
+- name: Yazarlar
+  link: /yazarlar.html
