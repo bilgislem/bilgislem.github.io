@@ -26,3 +26,18 @@ layout: default
 </div>
 </div>
 </div>
+<div class="row">
+	<div class="col-12">
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.istanbul-itservices.com/wp-content/uploads/2014/12/home-service-istanbulitservices.gif" class="card-img-top" alt="...">
+		  <div class="card-body">
+			<h5 class="card-title">Card title</h5>
+			<p class="card-text">Computer Repair
+				Viruses Removal
+				Backup Files
+				Internet Connection</p>
+			<a href="#" class="btn btn-primary">Go somewhere</a>
+		  </div>
+		</div>
+	</div>
+</div>
