@@ -3,6 +3,7 @@ title: Office 365 Powershell Mail İzleme
 author: ramazan
 categories: office365
 short_name: ramazan
+image: /assets/images/get-messagetrace.png
 ---
 
 Powershell komutu ile office365 üzerinde mail izleme nasıl yapılır.
