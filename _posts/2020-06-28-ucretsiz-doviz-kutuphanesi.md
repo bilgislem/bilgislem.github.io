@@ -4,6 +4,7 @@ author: ramazan
 categories: php
 short_name: ramazan
 tags: php döviz kur sınıf class kütüphane
+image: /assets/images/doviz.png
 ---
 
 Merhabalar
