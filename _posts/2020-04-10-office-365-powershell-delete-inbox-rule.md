@@ -3,6 +3,7 @@ title: Office 365 Powershell Gelen Kutusu Kurallarını Silme
 author: ramazan
 categories: office365
 image: /assets/images/get-inbox-rule-select-properties.png
+image_alt: Office 365 Powershell Gelen Kutusu Kurallarını Silme
 ---
 
 Merhabalar
