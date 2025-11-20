@@ -33,7 +33,7 @@ layout: default
 		 {% for post in site.posts %}
 		 <div class="col-4 mt-2">
 		<div class="card" style="width: 18rem;">
-		  <img src="{{post.image}}" class="card-img-top" alt="...">
+		  <img src="{{post.image}}" class="card-img-top" alt="{{image_alt}}">
 		  <div class="card-body">
 			<a href="{{ post.url }}" ><h5 class="card-title">{{ post.title }}</h5></a>
 			<div class="card-text">
