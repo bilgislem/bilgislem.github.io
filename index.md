@@ -28,9 +28,10 @@ layout: default
 </div>
 
 <div class="row">
-	<div class="col-12">
+	
 	
 		 {% for post in site.posts %}
+		 <div class="col-4">
 		<div class="card" style="width: 18rem;">
 		  <img src="---" class="card-img-top" alt="...">
 		  <div class="card-body">
@@ -41,6 +42,7 @@ layout: default
 			<a href="{{ post.url }}" class="btn btn-primary">Devamını Oku</a>
 		  </div>
 		</div>
+		</div>
 		 {% endfor %}
-	</div>
+	
 </div>
