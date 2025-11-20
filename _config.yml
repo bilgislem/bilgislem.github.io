@@ -9,7 +9,15 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   
-
+jekyll_admin:
+  hidden_links:
+    - posts
+    - pages
+    - staticfiles
+    - datafiles
+    - configuration
+  homepage: "pages"
+  
 timezone:    Europe/Istanbul
 
 repository: bilgislem/bilgislem.github.io
