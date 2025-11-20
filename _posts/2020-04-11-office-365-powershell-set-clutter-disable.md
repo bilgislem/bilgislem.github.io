@@ -2,6 +2,7 @@
 title: Office 365 Powershell ile İkincil Özelliğini Kapatma
 author: ramazan
 categories: office365
+image: /assets/images/Disable-clutter-by-using-the-PowerShell-command.jpg
 ---
 Merhabalar
 Office365 de powershell ile mail hesabının ikincil özelliğini kapatmak için aşağıdaki komutları kullanabilirsiniz.
