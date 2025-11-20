@@ -33,7 +33,7 @@ layout: default
 		 {% for post in site.posts %}
 		 <div class="col-4 mt-2">
 		<div class="card" style="width: 18rem;">
-		  <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930" class="card-img-top" alt="...">
+		  <img src="{{post.image}}" class="card-img-top" alt="...">
 		  <div class="card-body">
 			<h5 class="card-title">{{ post.title }}</h5>
 			<div class="card-text">
