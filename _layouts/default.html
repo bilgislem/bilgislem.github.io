@@ -28,6 +28,41 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+	    <style>
+    /* Küçük ekstra stil: gölge, avatar border, sosyal ikon hover */
+    .author-card {
+      background: var(--bs-body-bg);
+      border-radius: .75rem;
+      box-shadow: 0 6px 18px rgba(20,30,50,0.06);
+      transition: transform .12s ease, box-shadow .12s ease;
+    }
+    .author-card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(20,30,50,0.09); }
+
+    .author-avatar {
+      width: 72px;
+      height: 72px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid rgba(0,0,0,0.06);
+      flex-shrink: 0;
+    }
+
+    .author-meta .muted { color: #6c757d; font-size: .9rem; }
+
+    .social-btn {
+      --btn-pad: .36rem;
+      padding: .25rem .42rem;
+      font-size: 1rem;
+      line-height: 1;
+      border-radius: .5rem;
+    }
+    .social-btn:hover { transform: translateY(-2px); }
+    /* Küçük ekranlarda içerik üst üste gözüksün */
+    @media (max-width: 575.98px) {
+      .author-card { padding: .9rem; }
+      .author-body { gap: .6rem; }
+    }
+  </style>
   </head>
   <body>
     <div class="container">
