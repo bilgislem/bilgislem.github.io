@@ -2,6 +2,7 @@
 title: Office 365 Powershell Mail Arama ve Silme
 author: ramazan
 categories: Office365
+image: /assets/images/exchange-search-mailbox-powershell.jpg.webp
 ---
 Merhabalar
 Office365 de powershell üzerinden mail arama ve silme işlemi için aşağıdaki komutlar kullanılabilir.
