@@ -35,11 +35,11 @@ layout: default
 		<div class="card" style="width: 18rem;">
 		  <img src="{{post.image}}" class="card-img-top" alt="...">
 		  <div class="card-body">
-			<h5 class="card-title">{{ post.title }}</h5>
+			<a href="{{ post.url }}" ><h5 class="card-title">{{ post.title }}</h5></a>
 			<div class="card-text">
 				 {{ post.excerpt }}
 			</div>
-			<a href="{{ post.url }}" class="btn btn-primary">Devamını Oku</a>
+			<!--<a href="{{ post.url }}" class="btn btn-primary">Devamını Oku</a>-->
 		  </div>
 		</div>
 		</div>
