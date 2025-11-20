@@ -7,7 +7,7 @@ categories: office365
 Merhabalar
 Office 365 de powersell ile gelen kutusundaki kuralları silmek için aşağıdaki kodları kullanabiliriz.
 Powershelli yönetici olarak açıyoruz.
-```
+```powershell
 Set-ExecutionPolicy RemoteSigned
 
 $UserCredential = Get-Credential
