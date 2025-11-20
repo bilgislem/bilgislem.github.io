@@ -2,6 +2,16 @@
 layout: default
 ---
 <h1>{{ page.title }}</h1>
+
+<p>
+  {{ page.date | date_to_string }}
+  {% assign author = site.authors | where: 'short_name', page.author | first %}
+  {% if author %}
+    - <a href="{{ author.url }}">{{ author.name }}</a>
+  {% endif %}
+</p>
+
+{{ content }}
 <div class="container my-4">
 
   <!-- AUTHOR CARD -->
@@ -11,7 +21,7 @@ layout: default
     <div class="d-flex align-items-center justify-content-between mb-2">
 
       <!-- Sol: Tarih -->
-      <small class="text-muted">27 Kasım 2025</small>
+      <small class="text-muted">{{ page.date | date_to_string }}</small>
 
       <!-- Ortada: Avatar -->
       <img src="https://i.pravatar.cc/120?img=32" 
@@ -19,7 +29,7 @@ layout: default
            class="rounded-circle author-center-img">
 
       <!-- Sağ: Yazar Adı -->
-      <small class="fw-semibold text-muted">Ayşe Yılmaz</small>
+      <small class="fw-semibold text-muted">{{author.name }}</small>
 
     </div>
 
@@ -32,12 +42,3 @@ layout: default
   </div>
 
 </div>
-<p>
-  {{ page.date | date_to_string }}
-  {% assign author = site.authors | where: 'short_name', page.author | first %}
-  {% if author %}
-    - <a href="{{ author.url }}">{{ author.name }}</a>
-  {% endif %}
-</p>
-
-{{ content }}
