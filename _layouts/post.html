@@ -18,10 +18,10 @@ layout: default
   <div class="author-layout text-center p-3 bg-white shadow-sm rounded">
 
     <!-- Üst Satır: Sol tarih – Ortada resim – Sağ yazar -->
-    <div class="d-flex align-items-center justify-content-between mb-2">
+    <div class="d-flex align-items-center justify-content-center mb-2">
 
       <!-- Sol: Tarih -->
-      <small class="text-muted">{{ page.date | date_to_string }}</small>
+      <p class="fs-1 pg-2">{{ page.date | date_to_string }}</p>
 
       <!-- Ortada: Avatar -->
       <img src="https://avatars.githubusercontent.com/u/4970844?v=4" 
@@ -29,7 +29,7 @@ layout: default
            class="rounded-circle author-center-img">
 
       <!-- Sağ: Yazar Adı -->
-      <small class="fw-semibold text-muted">{{author.name }}</small>
+      <p class="fw-semibold fs-1 pg-2">{{author.name }}</p>
 
     </div>
 
