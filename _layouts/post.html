@@ -2,58 +2,19 @@
 layout: default
 ---
 <h1>{{ page.title }}</h1>
-<!-- Author card: flex-column for xs, row for sm+ -->
-  <div class="author-card p-3 p-sm-4 d-flex flex-column flex-sm-row align-items-start gap-3">
-    <!-- Avatar -->
-    <img src="https://i.pravatar.cc/150?img=32" alt="Yazar fotoğrafı" class="author-avatar">
+<div class="author-compact d-flex align-items-center p-2 rounded shadow-sm bg-white">
+  <img src="https://i.pravatar.cc/100?img=32" class="author-compact-avatar me-2" alt="Yazar Fotoğrafı">
 
-    <!-- Body -->
-    <div class="d-flex flex-column flex-grow-1 author-body">
-      <!-- üst satır: isim, rol, meta ve buton -->
-      <div class="d-flex align-items-start justify-content-between gap-3">
-        <div>
-          <h5 class="mb-0">Ayşe Yılmaz</h5>
-          <div class="author-meta muted">Kıdemli Yazılım Mühendisi • <small class="text-muted">27 Kasım 2025 • 6 dk okuma</small></div>
-        </div>
-
-        <!-- Butonlar -->
-        <div class="d-flex align-items-center gap-2">
-          <!-- Takip butonu -->
-          <button type="button" class="btn btn-sm btn-primary">Takip Et</button>
-
-          <!-- Daha fazla seçenek (responsive: küçük görünümde simge) -->
-          <div class="btn-group" role="group" aria-label="author actions">
-            <a href="#" class="btn btn-outline-secondary btn-sm social-btn" title="E-posta" aria-label="E-posta">
-              <i class="bi bi-envelope-fill"></i>
-            </a>
-            <a href="#" class="btn btn-outline-secondary btn-sm social-btn" title="Twitter" aria-label="Twitter">
-              <i class="bi bi-twitter"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bio / kısa açıklama -->
-      <p class="mb-2 mt-2 text-muted" style="max-width:85ch;">
-        Ayşe, 10+ yıllık deneyime sahip yazılım mühendisi. Web performansı, erişilebilirlik ve ölçeklenebilir mimariler üzerine yazılar yayınlıyor. Öğrenmeyi ve açık kaynak katkılarını seviyor.
-      </p>
-
-      <!-- Sosyal / etiket satırı -->
-      <div class="d-flex flex-wrap align-items-center gap-2">
-        <a href="#" class="text-muted small me-2"><i class="bi bi-people-fill"></i> 8.2K takipçi</a>
-        <div class="vr d-none d-sm-block mx-1"></div>
-
-        <a href="#" class="btn btn-sm btn-outline-primary">Tüm yazıları</a>
-
-        <div class="ms-auto d-none d-sm-flex align-items-center gap-1">
-          <!-- sosyal ikonlar küçük -->
-          <a href="#" class="text-muted" title="Twitter"><i class="bi bi-twitter"></i></a>
-          <a href="#" class="text-muted ms-2" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-          <a href="#" class="text-muted ms-2" title="GitHub"><i class="bi bi-github"></i></a>
-        </div>
-      </div>
+  <div class="flex-grow-1">
+    <div class="d-flex justify-content-between align-items-center">
+      <h6 class="mb-0 fw-semibold">Ayşe Yılmaz</h6>
+      <small class="text-muted">6 dk</small>
     </div>
+    <small class="text-muted d-block">Kıdemli Yazılım Mühendisi</small>
   </div>
+
+  <button class="btn btn-sm btn-outline-primary ms-3">Takip</button>
+</div>
 <p>
   {{ page.date | date_to_string }}
   {% assign author = site.authors | where: 'short_name', page.author | first %}
