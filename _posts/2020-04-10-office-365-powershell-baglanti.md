@@ -4,6 +4,7 @@ author: ramazan
 categories: Office365
 short_name: ramazan
 image: https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930
+image_alt: Office 365 Powershell Bağlantısı
 ---
 
 Merhabalar 
