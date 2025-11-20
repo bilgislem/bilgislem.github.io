@@ -5,15 +5,11 @@ layout: default
 <div class="col-12">
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="---" class="d-block w-100" alt="...">
-    </div>
+	  {% for images in site.posts %}
     <div class="carousel-item">
-      <img src="---" class="d-block w-100" alt="...">
+      <img src="{{images.image}}" class="d-block w-100" alt="{{images.image_alt}}">
     </div>
-    <div class="carousel-item">
-      <img src="---" class="d-block w-100" alt="...">
-    </div>
+    {% endfor %}
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
