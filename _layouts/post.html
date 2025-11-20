@@ -5,10 +5,7 @@ layout: default
 
 <p>
   {{ page.date | date_to_string }}
-  {% assign author = site.authors | where: 'short_name', page.author | first %}
-  {% if author %}
-    - <a href="{{ author.url }}">{{ author.name }}</a>
-  {% endif %}
+  
 </p>
 
 {{ content }}
@@ -21,7 +18,7 @@ layout: default
     <div class="d-flex align-items-center justify-content-center mb-2">
 
       <!-- Sol: Tarih -->
-      <p class="fs-1 pg-2">{{ page.date | date_to_string }}</p>
+      <p class="fs-2 pg-2">{{ page.date | date_to_string }}</p>
 
       <!-- Ortada: Avatar -->
       <img src="https://avatars.githubusercontent.com/u/4970844?v=4" 
@@ -29,7 +26,11 @@ layout: default
            class="rounded-circle author-center-img">
 
       <!-- Sağ: Yazar Adı -->
-      <p class="fw-semibold fs-1 pg-2">{{author.name }}</p>
+      {% assign author = site.authors | where: 'short_name', page.author | first %}
+      {% if author %}
+        - <p class="fw-semibold fs-2 pg-2">{{author.name }}</p>
+      {% endif %}
+      
 
     </div>
 
