@@ -26,22 +26,21 @@ layout: default
 </div>
 </div>
 </div>
+
 <div class="row">
 	<div class="col-12">
+	
+		 {% for post in site.posts %}
 		<div class="card" style="width: 18rem;">
 		  <img src="---" class="card-img-top" alt="...">
 		  <div class="card-body">
-			<h5 class="card-title">Card title</h5>
+			<h5 class="card-title">{{ post.title }}</h5>
 			<div class="card-text">
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item">Computer Repair</li>
-					<li class="list-group-item">Viruses Removal</li>
-					<li class="list-group-item">Backup Files</li>
-					<li class="list-group-item"><i class="fas fa-check"></i>Internet Connection</li>
-				 </ul>
+				 {{ post.excerpt }}
 			</div>
-			<a href="#" class="btn btn-primary">Go somewhere</a>
+			<a href="{{ post.url }}" class="btn btn-primary">Devamını Oku</a>
 		  </div>
 		</div>
+		 {% endfor %}
 	</div>
 </div>
