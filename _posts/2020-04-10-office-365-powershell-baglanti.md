@@ -9,7 +9,7 @@ image_alt: Office 365 Powershell Bağlantısı
 
 Merhabalar 
 Office 365 i powershell den müdahele etmek için powershell yönetici olarak başlatıyoruz.
-```powerhell
+```powershell
 Set-ExecutionPolicy RemoteSigned
 
 $UserCredential = Get-Credential
