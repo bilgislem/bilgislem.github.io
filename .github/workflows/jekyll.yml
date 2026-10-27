@@ -2,7 +2,7 @@ name: bilgislem.github.io
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
     branches: [ master ]
 
